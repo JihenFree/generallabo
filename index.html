@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>General Labo</title>
+		<link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="boiling.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://bootswatch.com/4/cerulean/bootstrap.min.css" rel="stylesheet">
+        <link href="https://bootswatch.com/4/cerulean/bootstrap.css" rel="stylesheet">
+        <link href="https://bootswatch.com/4/cerulean/_variables.scss" rel="stylesheet">
+        <link href="https://bootswatch.com/4/cerulean/_bootswatch.scss" rel="stylesheet">
+        <script src="script.js"></script>
+    </head>
+    <body>
+	
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><h2 style=" color: #b3ffb3;"><img src="boiling.png" title="https://www.flaticon.com/free-icons/boiling" height="40"><b>General Labo</b></h2></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav ml-auto" >
+                  
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"  style=" color: #b3ffb3;" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" onclick="products()">Products</a>
+                    <div id="iproducts" class="dropdown-menu">
+                      <a class="dropdown-item" onclick="submenu(this)"  name="subequipments"  href="#">Equipments</a>
+                      <a class="dropdown-item"  onclick="submenu(this)"  name="subglassware"  href="#">Glassware</a>
+                      <a class="dropdown-item" onclick="submenu(this)"  name="subplasticware" href="#">Plasticware</a>
+                      <a class="dropdown-item" onclick="submenu(this)"  name="subporcelain" href="#">Porcelainware</a>
+                      <a class="dropdown-item" onclick="submenu(this)"  name="subconsumable" href="#">Consumables</a>
+                      <a class="dropdown-item" onclick="submenu(this)"  name="subchemicals" href="#">Chemicals</a>
+                      
+                      <div id="subequipments" style=" display:none;">
+                      <div  class="dropdown-divider"> </div>
+                      <a class="dropdown-item" onclick="popup(this)" name="ibaths" href="#">Water Baths & Circulators</a>
+                      <a class="dropdown-item" onclick="popup(this)" name="iph" href="#">Electrochemical Instruments</a>
+                      <a class="dropdown-item" onclick="popup(this)" name="istirrers" href="#">Stirrers</a>
+                      <a class="dropdown-item" onclick="popup(this)" name="imantles" href="#">Heating mantles</a>
+                      <a class="dropdown-item" onclick="popup(this)" name="imicropip" href="#">Micropipettes</a>
+                      <a class="dropdown-item" onclick="popup(this)" name="ibalances" href="#">Balances</a>
+                      <a class="dropdown-item" onclick="popup(this)" name="ipump" href="#">Vacuum Pump</a>
+                      <a class="dropdown-item" onclick="popup(this)" name="incubator" href="#">Incubators</a>
+                    </div>
+                    <div id="subglassware" style=" display:none;">
+                      <div  class="dropdown-divider"> </div>
+                      <a class="dropdown-item" onclick="popup(this)" name="iadapters" href="#">Adapters</a>
+                      <a class="dropdown-item" onclick="popup(this)" name="ifunnels" href="#">Funnels</a>
+                      <a class="dropdown-item" onclick="popup(this)" name="isfunnels" href="#">Saparating Funnels</a>
+                      <a class="dropdown-item" onclick="popup(this)" name="iflasks" href="#">Flasks</a>
+                      <a class="dropdown-item" onclick="popup(this)" name="ibeakers" href="#">Beakers</a>
+                      <a class="dropdown-item" onclick="popup(this)" name="ierlen" href="#">Erlen Meyers</a>
+                      <a class="dropdown-item" onclick="popup(this)" name="idishes" href="#">Crystallizing Dishes</a>
+                      <a class="dropdown-item" onclick="popup(this)" name="idessicators" href="#">Dessicators</a>
+                      <a class="dropdown-item" onclick="popup(this)" name="igradcyl" href="#">Graduated Cylinders</a>
+                      <a class="dropdown-item" onclick="popup(this)" name="isoxhlet" href="#">Soxhlet Extractors</a>
+                      <a class="dropdown-item" onclick="popup(this)" name="ipipet" href="#">Pipettes</a>
+                      <a class="dropdown-item" onclick="popup(this)" name="ivflask" href="#">Volumetric Flasks</a>
+                       <a class="dropdown-item" onclick="popup(this)" name="ipycno" href="#">Pycnometers</a>
+                      <a class="dropdown-item" onclick="popup(this)" name="ibruettes" href="#">Burettes</a>
+                      <a class="dropdown-item" onclick="popup(this)" name="icondensers" href="#">Condensers</a>
+                      <a class="dropdown-item" onclick="popup(this)" name="ibottles" href="#">Laboratory Bottles</a>
+                      <a class="dropdown-item" onclick="popup(this)" name="iwatchglass" href="#">Watch Glass</a>
+                      <a class="dropdown-item" onclick="popup(this)" name="itesttubes" href="#">Test Tubes</a>
+                    </div>
+                    <div id="subplasticware" style=" display:none;">
+                      <div  class="dropdown-divider"> </div>
+                      <a class="dropdown-item" onclick="popup(this)" name="ipbeakers" href="#">Beakers</a>
+                      <a class="dropdown-item" onclick="popup(this)" name="icryobox" href="#">Cryo Boxes</a>
+                      <a class="dropdown-item" onclick="popup(this)" name="ipfunnels" href="#">Funnels</a>
+                      <a class="dropdown-item" onclick="popup(this)" name="ipgradcyl" href="#">Graduated Cylinders</a>
+                     
+                      <a class="dropdown-item" onclick="popup(this)" name="iwbottles" href="#">Wash Bottles</a>
+                     
+                    </div>
+                    <div id="subconsumable" style=" display:none;">
+                      <div  class="dropdown-divider"> </div>
+                      <a class="dropdown-item" onclick="popup(this)" name="istirringb" href="#">Stirrig Bars</a>
+                      <a class="dropdown-item" onclick="popup(this)" name="iburner" href="#">Burner</a>
+                       <a class="dropdown-item" onclick="popup(this)" name="iboxslide" href="#">Box Slide</a>
+                      <a class="dropdown-item" onclick="popup(this)" name="idisheva" href="#">Dish Evaporating</a>
+                       <a class="dropdown-item" onclick="popup(this)" name="ipipetpump" href="#">Pipette Pump</a>
+                       <a class="dropdown-item" onclick="popup(this)" name="idensimeter" href="#">Densimeters</a>
+                       <a class="dropdown-item" onclick="popup(this)" name="ibrush" href="#">Bottle Brush</a>
+                        <a class="dropdown-item" onclick="popup(this)" name="ifilterpaper" href="#">Filter Paper</a>
+                        <a class="dropdown-item" onclick="popup(this)" name="iphpaper" href="#">pH Paper</a>
+                    </div>
+                      <div id="subporcelain" style=" display:none;">
+                      <div  class="dropdown-divider"> </div>
+                      <a class="dropdown-item" onclick="popup(this)" name="imortar" href="#">Pestle & Mortar</a>
+                       <a class="dropdown-item" onclick="popup(this)" name="icrucible" href="#">Crucibles</a>
+                        <a class="dropdown-item" onclick="popup(this)" name="ibuchner" href="#">Funnel, Buchner</a>
+                      
+                    </div>
+                      <div id="subchemicals" style=" display:none;">
+                        <div  class="dropdown-divider"> </div>
+                       
+                        <a class="dropdown-item" onclick="popup(this)" name="isulphate" href="#">Sulphates</a>
+                        <a class="dropdown-item" onclick="popup(this)" name="ichloride" href="#">Chlorides</a>
+                        
+                        <a class="dropdown-item" onclick="popup(this)" name="icarbonate" href="#">Carbonates</a>
+                        <a class="dropdown-item" onclick="popup(this)" name="iacid" href="#">Acids</a>
+                        <a class="dropdown-item" onclick="popup(this)" name="iphosphate" href="#">Phosphates</a>
+                        
+                        <a class="dropdown-item" onclick="popup(this)" name="iindicator" href="#">Indicators</a>
+                        <a class="dropdown-item" onclick="popup(this)" name="iothers" href="#">Other</a>
+                        
+                    </div>
+                  </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" onclick="popup(this)" style=" color: #b3ffb3;" href="#" name="icontact">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" onclick="popup(this)"  style=" color: #b3ffb3;" name="iabout" href="#">About Us</a>
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+          <div style=" position: absolute;
+          top: 100px; left: 50px;">
+            <table>
+              <tr>
+                
+                 
+                <td style="background-color: transparent;">
+           
+              
+                 <input class="form-control"  onfocus="nomenu()" style="background-color: transparent;" size="30" style=" color: white;" type="text" name="search" id="search" placeholder="product name " >
+                 <datalist id="found">
+                  
+                  </datalist>
+                 
+                </td>
+                <td style="background-color: transparent;">
+                  
+                 
+                  &nbsp;&nbsp;<button class="btn btn-primary" onclick="search()" id="searchBtn" style=" color: #b3ffb3;" >Search</button>
+                 
+                
+              </td>
+          
+              </tr>
+            </table>
+            <script>
+            var input = document.getElementById("search");
+
+// Execute a function when the user presses a key on the keyboard
+input.addEventListener("keypress", function(event) {
+  // If the user presses the "Enter" key on the keyboard
+  if (event.key === "Enter") {
+    // Cancel the default action, if needed
+    
+    // Trigger the button element with a click
+    document.getElementById("searchBtn").click();
+  }
+}); 
+</script>
+            <div style=" padding-top: 50px;" >
+            <div id="icontact" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+              
+              
+              <div  class="card-body">
+                <h4 class="card-title">Contact Us</h4>
+                <p class="card-text"><b>General Labo</b><br>
+                  
+                  Av Magida Boulila Imm El Amen bloc C mezzanine - 3000 Sfax - Tunisia<br>
+                  Tel: (+216) 23 130 703 <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;(+216) 22 130 703<br>
+                  Fax: (+216) 74 416 730<br>
+                  e-mail: general.labo@topnet.tn<br>
+                  </p>
+              </div>
+                  </div>
+                  <div id="iabout" style=" display:none;max-width: 30rem;" class="card border-primary mb-3">
+              
+              
+                    <div  class="card-body">
+                      <h3> <h4 class="card-title">About Us</h4>
+                      <p class="card-text">
+                       Since 2004, as a laboratory distributor and service provider <b>General Labo</b> strives to empower its customers from industry and research to better equip and manage their laboratories with laboratory supplies such as laboratory equipment, glassware, consumables, chemicals.
+                      </h3>
+                        </p>
+                    </div>
+                        </div>
+
+                  <div id="iadapters" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+              
+              
+                    <div  class="card-body">
+                      <h4 class="card-title">Adapters</h4>
+                      <p class="card-text">
+                        <a href="https://www.glasscolabs.com/product/adapters-reduction-din/">Adaptateur de reduction femelle14/23-male 29</a><br>
+                        <a href="https://www.glasscolabs.com/product/adapters-reduction-din/">Adaptateur de reduction femelle19/26-male 29</a><br>
+                        <a href="https://www.glasscolabs.com/product/adapters-reduction-din/"> Adaptateur de reduction femelle24/29-male 29</a><br>
+                        <a href="https://www.glasscolabs.com/product/expansion-adapter/">Adaptateur expansion femelle29/32-male 24/29</a><br>
+                        <a href="https://www.glasscolabs.com/product/expansion-adapter/"> Adaptateur expansion femelle 24/29 male14/23</a><br>
+                        <a href="https://www.glasscolabs.com/product/expansion-adapter/">Adaptateur expansion femelle 29/32 male 14/23</a><br>
+                        <a href="https://www.glasscolabs.com/product/expansion-adapter/">Adaptateur expansion femelle 29/32 male 19/26</a><br>
+                        
+                        </p>
+                    </div>
+                        </div>
+                        
+                        <div id="ibaths" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+              
+              
+                          <div  class="card-body">
+                            <h4 class="card-title">Water Baths & Circulators</h4>
+                            <p class="card-text">
+                              <a href="https://labtech.co.kr/Water-Bath/view/2571576">	Bain marie 11 litres digital avec couvercle</a><br>
+                              <a href="https://labtech.co.kr/Water-Bath/view/2571576">	Bain marie 22 litres digital avec couvercle	</a><br>
+                              <a href="https://labtech.co.kr/Water-Bath/view/2571576">	Bain marie 6 litres digital avec couvercle	</a><br>
+                              <a href="https://www.jeiotech.com/eng/product/product.php?ptype=view&prdcode=1512290003&catcode=101100&page=1&searchopt=&searchkey=">	Bain marie analogique 3.5 litres	</a><br>
+                              <a href="https://www.jeiotech.com/eng/product/product.php?ptype=view&prdcode=1601110010&catcode=101100&page=1&searchopt=&searchkey=">	Bain refrigéré cryostat 30 litres -25°C+150°C	</a><br>
+                              <a href="https://labtech.co.kr/Bath-Circulator/view/2571550">	Bain thermostaté à circulation 11L	</a><br>
+                              <a href="https://labtech.co.kr/Bath-Circulator/view/2571550">	Bain thermostaté à circulation 6L 	</a><br>
+                              <a href="https://labtech.co.kr/Bath-Circulator/view/2571554">	Bain ultrason 6L  	</a><br>
+                              
+                              
+                              
+                              </p>
+                          </div>
+                              </div>
+                              <div id="iph" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+              
+              
+                                <div  class="card-body">
+                                  <h4 class="card-title">Electrochemical Instruments</h4>
+                                  <p class="card-text">
+                                     <a href="https://aperainst.com/ph700-benchtop-ph-meter-tester-kit">	 Benchtop pH Meter Kit PH700	</a><br>
+                                    <a href="https://aperainst.com/ec700-benchtop-conductivity-meter-tester-kit">	Benchtop Conductivity Meter Kit EC700	</a><br>
+                                    <a href="https://www.fishersci.se/shop/products/eutech-elite-conductivity-tds-salinity-pocket-tester-cup-sensor/15934012">	Thermo Conductivity/TDS/Salinity Pocket Tester	</a><br>
+                                    <a href="https://aperainst.com/ph20-value-ph-meter-pocket-digital-tester-pen-kit-apera-instruments">	 Pocket pH Tester Kit PH20	</a><br>
+                                    <a href="https://aperainst.com/tds20-value-pocket-tds-tester-meter">	Pocket TDS Tester Kit TDS20	</a><br>
+                                    <a href="https://aperainst.com/ec20-value-portable-pocket-conductivity-tester-meter-sensor">	Pocket Conductivity Tester Kit EC20 	</a><br>
+                                    <a href="https://www.omnilab-shop.de/en/1190966">	 PH CHECK DOSTMANN </a><br>
+                                   
+
+                                    
+                                    </p>
+                                </div>
+                                    </div>
+                                    <div id="istirrers" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+              
+              
+                                      <div  class="card-body">
+                                        <h4 class="card-title">Stirrers</h4>
+                                        <p class="card-text">
+                                          <a href="https://labtech.co.kr/Hotplate-Stirrer/view/2571585">	Agitateur magnétique chauffant LMS-1003	</a><br>
+                                          <a href="https://www.jeiotech.com/eng/product/product.php?ptype=view&prdcode=1601130016&catcode=101500&page=1&searchopt=&searchkey=">	Agitateur magnétique MS-17B	</a><br>
+                                          <a href="ls100d.pdf">	Agitateur mécanique LS-100D	</a><br>
+                                          <a href="https://www.glasscolabs.com/product/magnetic-stirrer-with-digital-hotplate-alluminium-alloy-ceramic-coated-top/">	Agitateur magnetique chauffant digital 	</a><br>
+                                         
+                                          
+                                          </p>
+                                      </div>
+                                          </div>
+                                          <div id="imantles" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+              
+              
+                                            <div  class="card-body">
+                                              <h4 class="card-title">Heating Mantles</h4>
+                                              <p class="card-text">
+                                               
+                                                <a href="https://www.auxilab.es/controles/ObtenerPDF.ashx?f=%5c00%5c03%5cgp%5ccl_F_JGD001_08_I.pdf">	Chauffe ballon 100 ml 	</a><br>
+                                                <a href="https://www.auxilab.es/controles/ObtenerPDF.ashx?f=%5c00%5c03%5cgp%5ccl_F_JGD001_08_I.pdf">	Chauffe ballon 250 ml 	</a><br>
+                                                <a href="https://www.auxilab.es/controles/ObtenerPDF.ashx?f=%5c00%5c03%5cgp%5ccl_F_JGD001_08_I.pdf">	Chauffe ballon 500 ml 	</a><br>
+                                                <a href="https://www.auxilab.es/controles/ObtenerPDF.ashx?f=%5c00%5c03%5cgp%5ccl_F_JGD001_08_I.pdf">	Chauffe ballon 1000 ml 	</a><br>
+                                                <a href="https://www.auxilab.es/controles/ObtenerPDF.ashx?f=%5c00%5c03%5cgp%5ccl_F_JGD001_08_I.pdf">	Chauffe ballon 2000 ml 	</a><br>
+                                                <a href="https://www.auxilab.es/controles/ObtenerPDF.ashx?f=%5c00%5c03%5cgp%5ccl_F_JGD001_08_I.pdf">	Chauffe ballon 5000 ml 	</a><br>
+
+
+                                                </p>
+                                            </div>
+                                                </div>
+                                                <div id="imicropip" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+              
+              
+                                                  <div  class="card-body">
+                                                    <h4 class="card-title">Heating Mantles</h4>
+                                                    <p class="card-text">
+               <a href="https://www.glasscolabs.com/product/variable-micropipette-high-performance-micro-volume-pipette-single-channel/">	Micropipette variable 0.1 à 2.5 µl	</a><br>
+                <a href="https://www.glasscolabs.com/product/variable-micropipette-high-performance-micro-volume-pipette-single-channel/">	Micropipette variable 0.5-10µl	</a><br>
+                <a href="https://www.glasscolabs.com/product/variable-micropipette-high-performance-micro-volume-pipette-single-channel/">	Micropipette variable 2 - 20µL	</a><br>
+                <a href="https://www.glasscolabs.com/product/variable-micropipette-high-performance-micro-volume-pipette-single-channel/">	Micropipette variable 5-50µl	</a><br>
+                <a href="https://www.glasscolabs.com/product/variable-micropipette-high-performance-micro-volume-pipette-single-channel/">	Micropipette variable 10 à 100 µl	</a><br>
+                <a href="https://www.glasscolabs.com/product/variable-micropipette-high-performance-micro-volume-pipette-single-channel/">	Micropipette variable 100 à 1000 µl	</a><br>
+                 <a href="https://www.glasscolabs.com/product/variable-micropipette-high-performance-micro-volume-pipette-single-channel/">	Micropipette variable 500-10000µl	</a><br>
+                 <a href="https://www.glasscolabs.com/product/variable-micropipette-high-performance-micro-volume-pipette-single-channel/">	Micropipette variable 500-5000µl	</a><br>
+                                                            
+                                                      </p>
+                                                  </div>
+                                                      </div>
+                                                      <div id="ibalances" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+              
+              
+                                                        <div  class="card-body">
+                                                          <h4 class="card-title">Balances</h4>
+                                                          <p class="card-text">
+                                                           <a href="#">	BALANCE 5kg précision 0,1g serie 5171	</a><br>
+                                                          <a href="#">	Balance de portée 220g précision 0,1 mg	</a><br>
+                                                          <a href="#">	Balance précision 1000g/0.01g, série 5172	</a><br>
+                                                          <a href="#">	Balance précision 2000g/0.01g serie 5162	</a><br>
+                                                          <a href="#">	Balance précision 500g/0.01g, SERIE 5172	</a><br>
+
+                                                            </p>
+                                                        </div>
+                                                            </div>
+        <div id="ipump" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+              
+              
+                                                        <div  class="card-body">
+                                                          <h4 class="card-title">Vacuum Pump</h4>
+                                                          <p class="card-text">
+                                                          
+                                                          <a href="#">	Pompe à vide aspirateur VE-11	</a><br>
+                                                          
+                                                            </p>
+                                                        </div>
+                                                            </div>
+                                                                                                                  </div>
+        <div id="ipump" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+              
+              
+                                                        <div  class="card-body">
+                                                          <h4 class="card-title">Vacuum Pump</h4>
+                                                          <p class="card-text">
+                                                          
+                                                          <a href="#">	Pompe à vide aspirateur VE-11	</a><br>
+                                                          
+                                                            </p>
+                                                        </div>
+                                                            </div>
+                                                       
+<div id="incubator" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                                
+                                                                
+<div  class="card-body">
+<h4 class="card-title">Incubators</h4>
+<p class="card-text">
+                                                                                                            
+<a href="#">	Etuve bactériologique 60L	</a><br>
+                                                                                                            
+</p>
+</div>
+</div>
+<div id="isfunnels" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                                
+                                                                
+  <div  class="card-body">
+  <h4 class="card-title">Separating Funnels</h4>
+  <p class="card-text">
+                                                                                                              
+    <a href="#">	Ampoule à décanter 125 ml clé en PTFE	</a><br>
+    <a href="#">	Ampoule à décanter 250 ml clé en PTFE	</a><br>
+    <a href="#">	Ampoule à décanter 500 ml clé en PTFE	</a><br>
+    
+                                                                                                              
+  </p>
+  </div>
+  
+  </div>  
+  <div id="ifunnels" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                                
+                                                                
+    <div  class="card-body">
+    <h4 class="card-title"> Funnels</h4>
+    <p class="card-text">
+                                                                                                                
+      <a href="#">	Entonnoir en verre diam 100 mm	</a><br>
+<a href="#">	Entonnoir en verre diam 150 mm	</a><br>
+<a href="#">	Entonnoir en verre diam 50 mm	</a><br>
+<a href="#">	Entonnoir en verre diam 75 mm	</a><br>
+<a href="#">	Entonnoir en verre diam 80 mm	</a><br>
+<a href="#">	Entonnoir en verre diam 90 mm	</a><br>
+                                                                                                                
+    </p>
+    </div>
+    
+    </div>     
+    <div id="iflasks" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                              
+      <div  class="card-body">
+      <h4 class="card-title"> Flasks</h4>
+      <p class="card-text">
+                                                                                                                  
+       <a href="#">	Ballon en verre FR 100 ml rodage 29/32	</a><br>
+<a href="#">	Ballon en verre FR rodage 29/32 1L	</a><br>
+<a href="#">	Ballon en verre FR 2000 ML rodage 29/32	</a><br>
+<a href="#">	Ballon en verre FR 25 ML rodage 14/23	</a><br>
+<a href="#">	Ballon en verre FR  250 ml rodage 29/32	</a><br>
+<a href="#">	Ballon en verre FR rodage 29/32 50 ml	</a><br>
+<a href="#">	Ballon en verre FR  500 ml rodage 29/32	</a><br>
+<a href="#">	Ballon en verre FR 1000 ml rodage 24/29	</a><br>
+<a href="#">	Ballon en verre FR 100 ml rodage 14/23	</a><br>
+<a href="#">	Ballon recepteur 1000 ml rodage S35	</a><br>
+<a href="#">	Ballon en verre FP 100 ml rodage 29/32	</a><br>
+<a href="#">	Ballon en verre FP 1000 ml rodage 29/32	</a><br>
+<a href="#">	Ballon en verre FP 2000 ml rodage 29/32	</a><br>
+<a href="#">	Ballon en verre FP 250 ml rodage 29/32	</a><br>
+<a href="#">	Ballon en verre FP 50 ml rodage 29/32	</a><br>
+<a href="#">	Ballon en verre FP 500 ml rodage 29/32	</a><br>
+<a href="#">	Ballon tricol 250 ml  en verre rodage 29/32	</a><br>
+<a href="#">	Ballon tricol 500 ml en verre rodage 29/32-29/3	</a><br>
+<a href="#">	Ballon bicol 1000 ml en verre rodage 29/32	</a><br>
+<a href="#">	Ballon bicol 500 ml en verre rodage 29/32 -14/2	</a><br>
+<a href="#">	Ballon tricol 1000 ml en verre rodage 29/32-29/	</a><br>
+
+                                                                                                                 
+      </p>
+      </div>
+      
+      </div>        
+      <div id="ibeakers" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                                
+                                                                
+        <div  class="card-body">
+        <h4 class="card-title"> Beakers</h4>
+        <p class="card-text">
+                                                                                                                    
+          <a href="#">	Becher en verre 100 ml	</a><br>
+          <a href="#">	Becher en verre 1000 ml	</a><br>
+          <a href="#">	Becher en verre 1000 ml FH	</a><br>
+          <a href="#">	Becher en verre 150 ml FB	</a><br>
+          <a href="#">	Becher en verre 2000 ml	</a><br>
+          <a href="#">	Becher en verre 25 ml	</a><br>
+          <a href="#">	Becher en verre 250 ml	</a><br>
+          <a href="#">	Becher en verre 400 ml FB	</a><br>
+          <a href="#">	Becher en verre 50 ml	</a><br>
+          <a href="#">	Becher en verre 50 ml FH	</a><br>
+          <a href="#">	Becher en verre 600 ml	</a><br>
+          <a href="#">	Becher en verre 100 ml FH	</a><br>
+          <a href="#">	Becher en verre 150 ml FH	</a><br>
+          <a href="#">	Becher en verre 400 ml FH	</a><br>
+          <a href="#">	becher en verre 600 ml FH	</a><br>
+          
+                                                                                                                   
+        </p>
+        </div>
+        
+        </div>    
+        <div id="ierlen" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                              
+      <div  class="card-body">
+      <h4 class="card-title"> Erlen Meyers</h4>
+      <p class="card-text">
+                                                                                                                  
+       <a href="#">	Erlen meyer en verre avec bouchon à vis 100 m	</a><br>
+<a href="#">	Erlen meyer en verre avec bouchon à vis 1000	</a><br>
+<a href="#">	Erlen meyer à baffle 1000 ml	</a><br>
+<a href="#">	Erlen meyer à baffles 250 ml	</a><br>
+<a href="#">	Erlen meyer en verre avec bouchon a vis 50 ml	</a><br>
+<a href="#">	Erlen meyer en verre avec bouchon à vis 500 m	</a><br>
+<a href="#">	Erlen meyer à baffle 500 ml	</a><br>
+<a href="#">	erlen meyer 100 ml rodage 29/32	</a><br>
+<a href="#">	erlen meyer 100 ml rodage 19/26	</a><br>
+<a href="#">	Erlen meyer 250 ml rodage 29/32	</a><br>
+<a href="#">	erlen meyer 50 ml rodage 29/32	</a><br>
+<a href="#">	Erlen meyer CE en verre 100 ml	</a><br>
+<a href="#">	Erlen meyer CE en verre 1000 ml	</a><br>
+<a href="#">	Erlen meyer 1000 ml rodage 29/32	</a><br>
+<a href="#">	Erlen meyer CE en verre 2000 ml	</a><br>
+<a href="#">	Erlen meyer CE en verre 25 ml	</a><br>
+<a href="#">	Erlen meyer CE en verre 250 ml	</a><br>
+<a href="#">	Erlen meyer CE en verre 50 ml	</a><br>
+<a href="#">	Erlen meyer CE en verre 500 ml	</a><br>
+
+                                                                                                                 
+      </p>
+      </div>
+      
+      </div>   
+      
+      <div id="idishes" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                              
+        <div  class="card-body">
+        <h4 class="card-title"> Crystallizing Dishes</h4>
+        <p class="card-text">
+                                                                                                                    
+          <a href="#">	Cristallisoir en verre sans bec diam 40 mm	</a><br>
+          <a href="#">	Cristallisoir en verre sans bec diam 50 mm	</a><br>
+          <a href="#">	Cristallisoir en verre sans bec diam 60 mm 	</a><br>  
+          <a href="#">	Cristallisoir en verre avec bec 80 mm H 45 mm	</a><br>
+<a href="#">	Cristallisoir en verre avec bec diam 70 mm 	</a><br>
+<a href="#">	Cristallisoir en verre avec bec diam 95 mm 	</a><br>
+<a href="#">	Cristallisoir en verre diam 115 mm	</a><br>
+<a href="#">	Cristallisoir en verre diam 140 mm 900 ml	</a><br>
+<a href="#">	Cristallisoir en verre diam 150 mm 1000 ml	</a><br>
+<a href="#">	Cristallisoir en verre diam 180 mm 2000 ml ave	</a><br>
+                              
+        </p>
+        </div>
+        
+        </div> 
+        <div id="idessicators" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                              
+          <div  class="card-body">
+          <h4 class="card-title"> Dessicators</h4>
+          <p class="card-text">
+                                                                                                                      
+            <a href="#">	Dessicateur en verre avec robinet diam 250m	</a><br>
+            <a href="#">	Dessicateur en verre avec robinet diam 300	</a><br>
+            <a href="#">	Dessicateur en verre diam 150 mm 	</a><br>
+            <a href="#">	Dessicateur en verre diam 200 mm 	</a><br>
+            <a href="#">	Dessicateur en verre diam 250 mm 	</a><br>
+            <a href="#">	Dessicateur en verre diam 300 mm 	</a><br>
+                              
+          </p>
+          </div>
+          
+          </div> 
+          <div id="ibottles" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                              
+            <div  class="card-body">
+            <h4 class="card-title"> Laboratory Bottles</h4>
+            <p class="card-text">
+              <a href="#">	Flacon 10 ml en verre brun	</a><br>
+<a href="#">	Flacon 15 ml en verre BRUN	</a><br>
+<a href="#">	Flacon 5 ml en verre brun bouchon blanc a vis	</a><br>
+<a href="#">	Flacon a sertir 20 ml en verre transparant	</a><br>
+
+
+<a href="#">	Flacon en verre 30 ml en verre clair GL28	</a><br>
+<a href="#">	flacon en verre ambré 250 ml 	</a><br>
+<a href="#">	flacon en verre BRUN  bouchon 100 ml	</a><br>
+<a href="#">	flacon en verre brun 30 ml bouchon 	</a><br>
+<a href="#">	Flacon en verre brun 30 ml GL18	</a><br>
+<a href="#">	Flacon en verre BRUN 90 ml avec bouchon invi	</a><br>
+<a href="#">	Flacon en verre clair 125 ml BOUCHON INVIOLA	</a><br>
+<a href="#">	Flacon en verre opaque 500 ml evec bouchon	</a><br>
+<a href="#">	Flacon en verre OPAQUE 60 ml AVEC BOUCHO	</a><br>
+<a href="#">	Flacon ISO en verre autoclavable 5000 ml	</a><br>
+
+              
+                                
+            </p>
+            </div>
+            
+            </div> 
+          <div id="igradcyl" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                              
+            <div  class="card-body">
+            <h4 class="card-title"> Graduated Cylinders</h4>
+            <p class="card-text">
+                                                                                                                        
+              <a href="#">	Eprouvette 2000 ML en plastique	</a><br>
+              <a href="#">	Eprouvette 10 ml en verre	</a><br>
+              <a href="#">	Eprouvette 100 ml en verre	</a><br>
+              <a href="#">	Eprouvette 1000 ml en verre classe A	</a><br>
+              <a href="#">	Eprouvette 2000 ml en verre pied hexagonal </a><br>
+              <a href="#">	Eprouvette 25 ml en verre pied hexagonal </a><br>
+              <a href="#">	Eprouvette 250 ml en verre classe A	</a><br>
+              <a href="#">	Eprouvette 5 ml graduée en verre	</a><br>
+              <a href="#">	Eprouvette 50 ml en verre pied hexagonal </a><br>
+              <a href="#">	Eprouvette 500 ml en verre pied hexagonal	</a><br>
+                                                                                                                       
+            </p>
+            </div>
+            
+            </div>    
+            <div id="isoxhlet" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                              
+              <div  class="card-body">
+              <h4 class="card-title"> Soxhlet Extractors</h4>
+              <p class="card-text">
+                                                                                                                          
+                <a href="#">	Extracteur de soxhlet 50 ml avec  ballon 100 m	</a><br>
+<a href="#">	Extracteur de soxhlet 100 ml avec ballon 250ml	</a><br>
+<a href="#">	Extracteur de soxhlet 150 ml avec ballon 250ml	</a><br>
+<a href="#">	Extracteur de soxhlet 500 ml avec ballon 1000ml	</a><br>
+
+                                                                                                                         
+              </p>
+              </div>
+              
+              </div>        
+              <div id="ipipet" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                              
+                <div  class="card-body">
+                <h4 class="card-title"> Pipettes</h4>
+                <p class="card-text">
+                                                                                                                            
+                  <a href="#">	Pipette jaugée 10 ml en verre 1 traits classe B	</a><br>
+                  <a href="#">	Pipette jaugée 10 ml en verre 2 traits classe A	</a><br>
+                  <a href="#">	Pipette jaugée 1 ml en verre 1 traits	</a><br>
+                  <a href="#">	Pipette jaugée 2 ml en verre 2 traits classe AS	</a><br>
+                  <a href="#">	Pipette jaugée 5 ml en verre un trait classe B	</a><br>
+                  <a href="#">	Pipette pasteur en verre 230 mm	</a><br>
+                  <a href="#">	Pipette en verre 10 ml	</a><br>
+                  <a href="#">	Pipette en verre graduée 1 ml CLASSE B	</a><br>
+                  <a href="#">	Pipette jaugée 2 ml en verre 1 traits	</a><br>
+                  <a href="#">	Pipette en verre graduée 25 ml CLASSE B	</a><br>
+                  <a href="#">	Pipette en verre graduée 2 ml CLASSE B	</a><br>
+                  <a href="#">	Pipette en verre gradueé 5 ml	</a><br>
+                  <a href="#">	Pipette graduée 2 ml classe AS	</a><br>
+<a href="#">	Pipette graduée 5 ml classe AS	</a><br>
+<a href="#">	Pipette graduée en verre classe AS 1 ml	</a><br>
+<a href="#">	Pipette jaugée 3 ml en verre 2 traits	</a><br>
+
+                                                                                                                           
+                </p>
+                </div>
+                
+                </div>  
+                <div id="ivflask" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                              
+                  <div  class="card-body">
+                  <h4 class="card-title">Volumetric Flasks </h4>
+                  <p class="card-text">
+                                                                                                                              
+                    <a href="#">	Fiole jaugée 200 ml en verre clair avec boucho	</a><br>
+<a href="#">	Fiole jaugée 200 ml en verre clair 	</a><br>
+<a href="#">	Fiole jaugée 250 ml en verre clair classe B	</a><br>
+<a href="#">	Fiole jaugée 250 ml en verre clair	</a><br>
+<a href="#">	Fiole jaugée 250 ml en verre brun classe B	</a><br>
+<a href="#">	Fiole jaugée 500 ml  en verre clair	</a><br>
+<a href="#">	Fiole jaugée 1000 ml en verre clair 	</a><br>
+<a href="#">	Fiole à vide 125 ml raccort en verre 	</a><br>
+<a href="#">	Fiole à vide 250 ml raccort en verre 	</a><br>
+<a href="#">	Fiole jaugée 10 ml en verre clair avec bouchon	</a><br>
+<a href="#">	Fiole jaugée 5 ml en verre avec bouchon rodé	</a><br>
+<a href="#">	Fiole jaugée 10 ml en verre avec bouchon 	</a><br>
+<a href="#">	Fiole jaugée 100 ml en verre brun classe B	</a><br>
+
+                                                                                                                             
+                  </p>
+                  </div>
+                  
+                  </div>    
+                  <div id="ibruettes" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                              
+                    <div  class="card-body">
+                    <h4 class="card-title"> Burettes</h4>
+                    <p class="card-text">
+                      <a href="#">	Burette en verre 10 ml clé en teflon 0.1 ml 	</a><br>                                                                                                        
+                      <a href="#">	Burette en verre 25 ml clé en teflon 0.1 ml 	</a><br>
+                      <a href="#">	Burette en verre 50 ml clé en teflon 0.1 ml 	</a><br>
+                      
+                                                                                                                               
+                    </p>
+                    </div>
+                    
+                    </div>   
+                    <div id="icondensers" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                                
+                                                                
+                      <div  class="card-body">
+                      <h4 class="card-title">Condensers</h4>
+                      <p class="card-text">
+                                                                                                                                  
+                        <a href="#">	Réfrigerant à boule (Allihn)long 300 mm rodage	</a><br>
+<a href="#">	Réfrigerant droit (libing)rodage 29/32 long 250	</a><br>
+<a href="#">	Réfrigerant droit (Liebig) rodage 29/32 long 400	</a><br>
+<a href="#">	Refrigérant droit (liebig) rodage 29/32 long 300	</a><br>
+<a href="#">	Réfrigérant serpentin rodage 29/32 long 250 	</a><br>
+<a href="#">	Réfrigérant serpentin rodage 29/32 long 300 	</a><br>
+<a href="#">	Colonne vigreux en verre rodage 29/32	</a><br>
+
+                                                                                                                                  
+                      </p>
+                      </div>
+                      
+                      </div>  
+                      <div id="iwatchglass" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                                
+                                                                
+                        <div  class="card-body">
+                        <h4 class="card-title">Watch Glass  </h4>
+                        <p class="card-text">
+                          <a href="#">	Verre de montre diam 125 mm	</a><br>
+                          <a href="#">	Verre de montre diam 50 mm	</a><br>
+                          <a href="#">	Verre de montre diam 60 mm	</a><br>
+                          <a href="#">	Verre de montre en verre diam 70 mm	</a><br>
+                          
+  
+                                                                                                                                    
+                        </p>
+                        </div>
+                        
+                        </div>  
+                        <div id="ipycno" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                               
+                          <div  class="card-body">
+                          <h4 class="card-title">Pycnometers  </h4>
+                          <p class="card-text">
+                            <a href="#">	Pycnomètre 10 ml en verre	</a><br>
+<a href="#">	Pycnomètre 100 ml en verre	</a><br>
+<a href="#">	Pycnomètre 25 ml en verre	</a><br>
+<a href="#">	Pycnomètre 50 ml en verre	</a><br>
+
+                                                                                                                                      
+                          </p>
+                          </div>
+                          
+                          </div>  
+                          <div id="itesttubes" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                               
+                            <div  class="card-body">
+                            <h4 class="card-title">Test Tubes  </h4>
+                            <p class="card-text">
+                              <a href="#">	Tube à essai diam 25 mm long 200 mm	</a><br>
+                              <a href="#">	Tube à vis  de culture 16 x 100 mm avec bouchon	</a><br>
+                              <a href="#">	Tube à essai 16 x 160 mm en verre ordinaire	</a><br>
+                                                                                                                                      
+                            </p>
+                            </div>
+                            
+                            </div>  
+                            <div id="ipbeakers" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                              
+                              <div  class="card-body">
+                              <h4 class="card-title"> PP Beakers</h4>
+                              <p class="card-text">
+                                                                                                                                          
+                                <a href="#">	Becher en  PP autoclavable avec anse 250 ml	</a><br>
+                                <a href="#">	Becher en  PP autoclavable avec anse 500 ml	</a><br>
+                                <a href="#">	Becher en  PP autoclavable avec anse 2000 ml	</a><br>
+                                <a href="#">	Becher en  PP autoclavable avec anse 5000 ml	</a><br>
+                                <a href="#">	Becher en PP 100 ml autoclavable	</a><br>
+                                <a href="#">	Becher en PP 1000 ml autoclavable	</a><br>
+                                <a href="#">	Becher en PP 2000 ml autoclavable	</a><br>
+                                <a href="#">	Becher en PP 25 ml autoclavable	</a><br>
+                                <a href="#">	Becher en PP 250 ml autoclavable	</a><br>
+                                <a href="#">	Becher en PP 50 ml autoclavable	</a><br>
+                                <a href="#">	Becher en PP 500 ml autoclavable	</a><br>
+                                <a href="#">	Becher en PP autoclavable avec anse 1000 ml	</a><br>
+                                <a href="#">	Becher en PP autoclavable avec anse 3000 ml	</a><br>
+                                
+                              </p>
+                              </div>
+                              
+                              </div> 
+                              <div id="icryobox" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                                
+                                                                
+                                <div  class="card-body">
+                                <h4 class="card-title">Cryo Boxes</h4>
+                                <p class="card-text">
+                                                                                                                                            
+                                  <a href="#">	Boite de congelation pour 100 cryotubes	</a><br>
+<a href="#">	Boite de congelation pour cryotube 81 PUITS	</a><br>
+<a href="#">	Boite de congelation pour tube falcon 50 ml 16	</a><br>
+<a href="#">	Boite de congelation pour tube PCR	</a><br>
+<a href="#">	Boite de congélation pour tubes falcon 15 mL	</a><br>
+
+                                  
+                                                                                                                                            
+                                </p>
+                                </div>
+                                
+                                </div>  
+                                <div id="ipfunnels" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                                
+                                                                
+                                  <div  class="card-body">
+                                  <h4 class="card-title">PP Funnels</h4>
+                                  <p class="card-text">
+                                                                                                                                              
+                                    <a href="#">	Entonnoir en pp diam 100mm	</a><br>
+<a href="#">	Entonnoir en PP diam 150 mm autoclavable	</a><br>
+<a href="#">	Entonnoir en PP diam 50 mm autoclavable	</a><br>
+<a href="#">	Entonnoir en PP diam 60 mm autoclavable	</a><br>
+<a href="#">	Entonnoir en PP diam 75 mm autoclavable	</a><br>
+                                                                                                      
+                                  </p>
+                                  </div>
+                                  
+                                  </div>  
+                                  <div id="ipgradcyl" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                                
+                                                                
+                                  <div  class="card-body">
+                                  <h4 class="card-title">PP Graduated Cylinders</h4>
+                                  <p class="card-text">
+                                                                                                                                              
+                                    <a href="#">	Eprouvette 10 ml en PL pied hexagonal	</a><br>
+<a href="#">	Eprouvette 100 ml en PP pied hexagonal	</a><br>
+<a href="#">	Eprouvette 1000ml en PL pied hexagonal	</a><br>
+<a href="#">	Eprouvette 25 ml en PL pied hexagonal	</a><br>
+<a href="#">	Eprouvette 250 ml en PP pied hexagonal	</a><br>
+<a href="#">	Eprouvette 50 ml en PL pied hexagonal	</a><br>
+<a href="#">	Eprouvette 500 ml en PL pied hexagonal	</a><br>
+
+                                                                                                      
+                                  </p>
+                                  </div>
+                                  
+                                  </div>  
+                                  <div id="iwbottles" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                               
+                                    <div  class="card-body">
+                                    <h4 class="card-title">Wash Bottles</h4>
+                                    <p class="card-text">
+                                                                                                                                                
+                                      <a href="#">	Pissette 125 ml en plastique	</a><br>
+                                      <a href="#">	Pissette 1L l en Pastique	</a><br>
+                                      <a href="#">	Pissette 250 ml en Plastique	</a><br>
+                                      <a href="#">	Pissette graduée en LDPE 500 ML	</a><br>
+                                      <a href="#">	Pissette plastique 500 ml	</a><br>
+                                                                                                      
+                                    </p>
+                                    </div>
+                                    
+                                    </div> 
+                                     <div id="istirringb" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                               
+                                    <div  class="card-body">
+                                    <h4 class="card-title">Stirring Bars</h4>
+                                    <p class="card-text">
+                                                                                                                                                
+                                     <a href="#">	Barreau aimanté 25 mm X 6 MM	</a><br>
+<a href="#">	Barreau aimanté 30 x 8 mm	</a><br>
+<a href="#">	Barreau aimanté 40 x 8 mm	</a><br>
+<a href="#">	Barreau aimanté 50 mmX8 mm	</a><br>
+<a href="#">	Barreau diam 6 mm long 10 mm	</a><br>
+<a href="#">	Barreau diam 6 mm long 20 mm	</a><br>
+<a href="#">	Barreau magnétique PTFE 15x 6 mm	</a><br>
+
+                                                                                                      
+                                    </p>
+                                    </div>
+                                    
+                                    </div> 
+                                     <div id="iboxslide" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                               
+                                    <div  class="card-body">
+                                    <h4 class="card-title">Box Slide</h4>
+                                    <p class="card-text">
+                                                                                                                                                
+                                     <a href="https://www.glasscolabs.com/product/box-slide/">	Boite de rangement 100 lames	</a><br>
+<a href="https://www.glasscolabs.com/product/box-slide/">	Boite de rangement 25 lames	</a><br>
+<a href="https://www.glasscolabs.com/product/box-slide/">	Boite de rangement 50 lames	</a><br>
+
+
+                                                                                                      
+                                    </p>
+                                    </div>
+                                    
+                                    </div> 
+                                     <div id="idisheva" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                               
+                                    <div  class="card-body">
+                                    <h4 class="card-title">Dish Evaporating</h4>
+                                    <p class="card-text">
+                                   <a href="https://www.glasscolabs.com/product/dish-evaporating-euro-design/">	Capsule d'evaporation en porce 35 ml D60XH2	</a><br>
+<a href="https://www.glasscolabs.com/product/dish-evaporating-euro-design/">	Capsule d'evaporation en porce 365ml D145X	</a><br>
+<a href="https://www.glasscolabs.com/product/dish-evaporating-euro-design/">	Capsule d'evaporation en porce 80ml D80XH3	</a><br>
+
+                                                                                                      
+                                    </p>
+                                    </div>
+                                    
+                                    </div> 
+                                    <div id="ipipetpump" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                               
+                                      <div  class="card-body">
+                                      <h4 class="card-title">Pipette Pump</h4>
+                                      <p class="card-text">
+                                        <a href="#">	Aspire pipette 2 ml bleu	</a><br>
+                                        <a href="#">	Aspire pipette avec roulette 25 ml rouge	</a><br>
+                                        <a href="#">	Aspire pipette roulette 10 ml vert	</a><br>
+                                        
+                                                                                                        
+                                      </p>
+                                      </div>
+                                      
+                                      </div> 
+                                       <div id="idensimeter" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                               
+                                      <div  class="card-body">
+                                      <h4 class="card-title">Densimeters</h4>
+                                      <p class="card-text">
+                                       <a href="#">	Densimètre en verre Gamme: 1000-2000 Kg/m	</a><br>
+<a href="#">	Densimètre en verre Gamme: 1100-1200 Kg/m	</a><br>
+<a href="#">	Densimètre en verre Gamme: 800-900 Kg/m3	</a><br>
+<a href="#">	Densimètre en verre Gamme: 900-1000 Kg/m3	</a><br>
+                                                                 
+                                      </p>
+                                      </div>
+                                      
+                                      </div> 
+                                        <div id="ibrush" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                               
+                                      <div  class="card-body">
+                                      <h4 class="card-title">Bottle Brush</h4>
+                                      <p class="card-text">
+                                      <a href="#">	Goupillon avec cotton diam 30 mm	</a><br>
+<a href="#">	Goupillon D 40 MM	</a><br>
+<a href="#">	Goupillon n 100 p/burette 10 ml	</a><br>
+<a href="#">	Goupillon pour  ballon et eprouvette	</a><br>
+<a href="#">	Goupillon pour laboratoire diam 25 mm	</a><br>
+<a href="#">	Goupillon pour laboratoire diam 50 mm	</a><br>
+<a href="#">	Goupillon pour tube a essai	</a><br>
+<a href="#">	Goupillon pour tube a hémolyse	</a><br>
+<a href="#">	Goupillon pour tube capillaire	</a><br>
+
+                                      </p>
+                                      </div>
+                                      
+                                      </div> 
+                                      <div id="ifilterpaper" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                               
+                                        <div  class="card-body">
+                                        <h4 class="card-title">Filter Paper</h4>
+                                        <p class="card-text">
+                                          <a href="#">	Papier filtre diam 150 mm	</a><br>
+                                          <a href="#">	Papier filtre EN RAME 42 x 52 mm	</a><br>
+                                          <a href="#">	Papier filtre FC75M diam 110 mm quallitatif	</a><br>
+                                          <a href="#">	Papier filtre qantitative moyenne diam 180 mm	</a><br>
+                                          <a href="#">	papier Filtre qualitative FC22L lente plat 110 m	</a><br>
+                                          <a href="#">	papier Filtre qualitative FC22L lente plat 90 mm	</a><br>
+                                          <a href="#">	papier Filtre qualitative FC26R rapide plat 110	</a><br>
+                                          <a href="#">	papier Filtre qualitative FC26R rapide plat 90 m	</a><br>
+                                          <a href="#">	papier Filtre qualitative FC75R diam 90 mm equ	</a><br>
+                                          <a href="#">	Papier filtre quallitatif FC20M diam 125 mm mo	</a><br>
+                                          <a href="#">	Papier filtre quallitatif FC75R diam 70 mm	</a><br>
+                                          <a href="#">	Papier Filtre quantitatif sans cendre diam 90 m	</a><br>
+                                          <a href="#">	Papier filtre quantitative sans cendre DIAM 70	</a><br>
+                                          <a href="#">	papier filtre standard 185 mm	</a><br>
+                                          <a href="#">	Papier filtre standard diam 100 mm	</a><br>
+                                          <a href="#">	Papier filtre standard diam 130 mm	</a><br>
+                                          <a href="#">	Papier filtre standard DIAM 250 MM	</a><br>
+                                          
+  
+                                        </p>
+                                        </div>
+                                        
+                                        </div> 
+                                         <div id="iphpaper" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                               
+                                      <div  class="card-body">
+                                      <h4 class="card-title">pH Paper</h4>
+                                      <p class="card-text">
+                                    <a href="#">	Papier PH 0-14 rouleau 5 mètres	</a><br>
+<a href="#">	Papier PH BANDELLETTE P/200	</a><br>
+<a href="#">	Papier PH BANDELLETTE P/80	</a><br>
+
+
+                                      </p>
+                                      </div>
+                                      
+                                      </div> 
+                                       <div id="imortar" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                               
+                                      <div  class="card-body">
+                                      <h4 class="card-title">Pestle & Mortar</h4>
+                                      <p class="card-text">
+                                   <a href="#">	Mortier en porcelaine avec pilon DIAM 100 MM	</a><br>
+<a href="#">	Mortier en porcelaine avec pilon diam 85 mm	</a><br>
+<a href="#">	Mortier en porcelaine diam 120 mm avec pilon	</a><br>
+<a href="#">	Mortier en porcelaine diam 130 mm avec pilon	</a><br>
+<a href="#">	Mortier en porcelaine diam 160 mm avec pillon	</a><br>
+
+                                      </p>
+                                      </div>
+                                      
+                                      </div> 
+                                       <div id="icrucible" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                               
+                                      <div  class="card-body">
+                                      <h4 class="card-title">Crucibles</h4>
+                                      <p class="card-text">
+                                  <a href="#">	Creuset en porcelaine 100ml diam 76 mm avec	</a><br>
+<a href="#">	Creuset en porcelaine 15 ml diam 35 mm	</a><br>
+<a href="#">	creuset en porcelaine 150 ml diam 84 mm	</a><br>
+<a href="#">	Creuset en porcelaine 30 ml diam 45 mm avec	</a><br>
+<a href="#">	Creuset en porcelaine 45 ml diam 50 mm avec	</a><br>
+<a href="#">	Creuset en porcelaine 50 ml avec couvercle	</a><br>
+<a href="#">	Creuset en porcelaine forme moyenne, 53x46	</a><br>
+
+                                      </p>
+                                      </div>
+                                      
+                                      </div> 
+                                        <div id="ibuchner" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                               
+                                      <div  class="card-body">
+                                      <h4 class="card-title">Funnel, Buchner</h4>
+                                      <p class="card-text">
+                                 <a href="#">	Entonnoir buchner en porcelaine  diam 64 mm	</a><br>
+<a href="#">	Entonnoir buchner en porcelaine 84 mm	</a><br>
+<a href="#">	Entonnoir buchner en porcelaine diam 105 mm	</a><br>
+<a href="#">	Entonnoir buchner en porcelaine diam 125 mm	</a><br>
+
+                                      </p>
+                                      </div>
+                                      
+                                      </div> 
+                                      <div id="isulphate" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                               
+                                        <div  class="card-body">
+                                        <h4 class="card-title">Sulphates</h4>
+                                        <p class="card-text">
+                                          <a href="#">	AMMONIUM SULPHATE 500G / 5 KG	</a><br>
+                                          <a href="#">	BARIUM SULPHATE 500G	</a><br>
+                                          <a href="#">	COPPER (II) SULPHATE (PENTAHYDRATE) 500g	</a><br>
+                                          <a href="#">	MANGANESE SULPHATE (monohydrate ) 500g	</a><br>
+                                          <a href="#">	NICKEL SULPHATE (HEXAHYDRATE) 500G	</a><br>
+                                          <a href="#">	MAGNESIUM SULPHATE 7H2O 1KG	</a><br>
+                                          <a href="#">	SODIUM THIOSULPHATE ANHYDROUS 500G	</a><br>
+                                          <a href="#">	SODIUM THIOSULPHATE, 5 H2O 	</a><br>
+                                          <a href="#">	FERROUS AMMONIUM SULPHATE (sel de mohr)	</a><br>
+                                          <a href="#">	ZINC SULPHATE (HEPTAHYDRATE) 500G	</a><br>
+                                          <a href="#">	POTASSIUM SULPHATE 500G	</a><br>
+                                          <a href="#">	SODIUM SULPHATE LR (ANHYDROUS) 500g	</a><br>
+                                          <a href="#">	FERROUS SULPHATE HEPTAHYDRATE 500 g	</a><br>
+                                          
+                                        </p>
+                                        </div>
+                                        
+                                        </div> 
+                                        <div id="ichloride" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                               
+                                          <div  class="card-body">
+                                          <h4 class="card-title">Chlorides</h4>
+                                          <p class="card-text">
+                                            <a href="#">	CALCIUM CHLORIDE DIHDYRATE 500G	</a><br>
+<a href="#">	AMMONIUM CHLORIDE 500G	</a><br>
+<a href="#">	POTASSIUM CHLORIDE 5KG	</a><br>
+<a href="#">	MAGNESIUM CHLORIDE (HEXAHDYRATE) 500G	</a><br>
+<a href="#">	COBALT (II) CHLORIDE hexahydrate 100G / 500G	</a><br>
+<a href="#">	BARIUM CHLORIDE dihydrate 500G	</a><br>
+<a href="#">	ZINC CHLORIDE 500G	</a><br>
+<a href="#">	MANGANESE CHLORIDE 4H2O 500G	</a><br>
+<a href="#">	SODIUM CHLORIDE 500 g	</a><br>
+
+                                            
+                                          </p>
+                                          </div>
+                                          
+                                          </div> 
+                                        
+                                        <div id="iothers" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                              
+                                          <div  class="card-body">
+                                          <h4 class="card-title">Other Chemicals</h4>
+                                          <p class="card-text">
+                                            <a href="#">	AGAR AGAR POWDER 500G	</a><br>
+                                            <a href="#">	POTASSIUM HYDROXIDE PELLETS 5KG	</a><br>
+                                            <a href="#">	SODIUM HYDROXIDE PELLETS 500G / 5KG	</a><br>
+                                            <a href="#">	POTASSIUM IODIDE 500G	</a><br>
+                                            <a href="#">	SILVER NITRATE 100G	</a><br>
+                                            <a href="#">	SILICA GEL SELF-INDICATING (BLUE) 500G	</a><br>
+                                            <a href="#">	CHARCOAL ACTIVATED (POWDER) 500 G	</a><br>
+                                            
+                                            <a href="#">	UREA 500G	</a><br>
+                                            <a href="#">	SODIUM POTASSIUM TARTRATE 500G / 5KG	</a><br>
+                                            
+                                          </p>
+                                          </div>
+                                          
+                                          </div> 
+                                           <div id="icarbonate" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                              
+                                          <div  class="card-body">
+                                          <h4 class="card-title">Carbonates</h4>
+                                          <p class="card-text">
+                                            <a href="#">	SODIUM CARBONATE 5KG	</a><br>
+<a href="#">	POTASSIUM BICARBONATE 500G	</a><br>
+<a href="#">	SODIUM CARBONATE MONOHYDRATE 500G	</a><br>
+<a href="#">	SODIUM BICARBONATE 500G	</a><br>
+<a href="#">	SODIUM CARBONATE Na2Co3 500G	</a><br>
+
+                                          </p>
+                                          </div>
+                                          
+                                          </div> 
+                                           <div id="iacid" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                              
+                                          <div  class="card-body">
+                                          <h4 class="card-title">Acids</h4>
+                                          <p class="card-text">
+                                         <a href="#">	Maleic acid 500g	</a><br>
+    <a href="#">	THIOBARBITURIC ACID 100G	</a><br>
+    <a href="#">	GLYCINE (AMINO ACETIC ACID) 500g	</a><br>
+    <a href="#">	CITRIC ACID H2O 500G	</a><br>
+    <a href="#">	Boric acid 500g	</a><br>
+    <a href="#">	EDTA Ethylenediaminetetraacetic acid 500G	</a><br>
+    <a href="#">	EDTA DISODIUM SALT 500G	</a><br>
+
+
+                                          </p>
+                                          </div>
+                                          
+                                          </div> 
+                                          <div id="iindicator" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                              
+                                            <div  class="card-body">
+                                            <h4 class="card-title">Indicators</h4>
+                                            <p class="card-text">
+                                           
+                                              <a href="#">	PHENOL RED 25G	</a><br>
+                                              <a href="#">	NEUTRAL RED (C. I. NO. 50040) 25G	</a><br>
+                                              <a href="#">	METHYL RED  100G	</a><br>
+                                              <a href="#">	CONGO RED 100G	</a><br>
+                                              <a href="#">	MALACHITE GREEN (C.I. NO. 42000) 100G	</a><br>
+                                              <a href="#">	BROMO CRESOL GREEN (NDICATOR)   25G	</a><br>
+                                              <a href="#">	BROMO PHENOL BLUE 100 G	</a><br>
+                                              <a href="#">	BROMO PHENOL BLUE 25G sodium salt	</a><br>
+                                              <a href="#">	NITRO BLUE TETRAZOLIUM 1G	</a><br>
+                                              <a href="#">	METHYLENE BLUE 25G	</a><br>
+                                              <a href="#">	BROMOTHYMOL BLUE  25G	</a><br>
+                                              
+  
+                                            </p>
+                                            </div>
+                                            
+                                            </div> 
+                                            <div id="iphosphate" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                              
+                                              <div  class="card-body">
+                                              <h4 class="card-title">Indicators</h4>
+                                              <p class="card-text">
+                                                <a href="#">	POTASSIUM PHOSPHATE MONOBASIC ANHYDROUS 500G	</a><br>
+                                                <a href="#">	SODIUM PHOSPHATE MONOBASIC 2 H2O	</a><br>
+                                                <a href="#">	SODIUM PHOSPHATE MONOBASIC ANHYDROUS 500G	</a><br>
+                                                <a href="#">	SODIUM PHOSPHATE DIBASIC 2 H2O 500G	</a><br>
+                                                <a href="#">	POTASSIUM PHOSPHATE DIBASIC 500G	</a><br>
+                                                
+                                                
+    
+                                              </p>
+                                              </div>
+                                              
+                                              </div> 
+                                      
+                </div>
+                 
+    </body>
+</html>
