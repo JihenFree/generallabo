@@ -18,7 +18,14 @@ function popup(item){
 function search(){
   var input = document.getElementById("search");
   var filter = input.value.toLowerCase();
+ 
     var nodes = document.querySelectorAll('[id^="i"]:not(#iproducts):not(#icontact)');
+    var y = document.querySelectorAll('[id^="i"]');
+    for (i = 0; i < y.length; i++) {
+  
+        y[i].style.display = "none";
+       
+      } 
     for (i = 0; i < nodes.length; i++) {
   
       if (nodes[i].innerHTML.toLowerCase().includes(filter)) {
