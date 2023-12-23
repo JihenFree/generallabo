@@ -28,8 +28,18 @@
                       <a class="dropdown-item"  onclick="submenu(this)"  name="subglassware"  href="#">Glassware</a>
                       <a class="dropdown-item" onclick="submenu(this)"  name="subplasticware" href="#">Plasticware</a>
                       <a class="dropdown-item" onclick="submenu(this)"  name="subporcelain" href="#">Porcelainware</a>
+                      <a class="dropdown-item" onclick="submenu(this)"  name="submetal" href="#">Metalware</a>
                       <a class="dropdown-item" onclick="submenu(this)"  name="subconsumable" href="#">Consumables</a>
                       <a class="dropdown-item" onclick="submenu(this)"  name="subchemicals" href="#">Chemicals</a>
+                      
+                      <div id="submetal" style=" display:none;">
+                        <div  class="dropdown-divider"> </div>
+                        <a class="dropdown-item" onclick="popup(this)" name="iforceps" href="#">Forceps</a>
+                          <a class="dropdown-item" onclick="popup(this)" name="iclamps" href="#">Clamp</a>
+                          <a class="dropdown-item" onclick="popup(this)" name="ispatula" href="#">Spatula</a>
+                          <a class="dropdown-item" onclick="popup(this)" name="iburner" href="#">Burner</a>
+                      
+                      </div>
                       
                       <div id="subequipments" style=" display:none;">
                       <div  class="dropdown-divider"> </div>
@@ -77,7 +87,7 @@
                     <div id="subconsumable" style=" display:none;">
                       <div  class="dropdown-divider"> </div>
                       <a class="dropdown-item" onclick="popup(this)" name="istirringb" href="#">Stirrig Bars</a>
-                      <a class="dropdown-item" onclick="popup(this)" name="iburner" href="#">Burner</a>
+                     
                        <a class="dropdown-item" onclick="popup(this)" name="iboxslide" href="#">Box Slide</a>
                      
                        <a class="dropdown-item" onclick="popup(this)" name="ipipetpump" href="#">Pipette Pump</a>
@@ -180,13 +190,13 @@ input.addEventListener("keypress", function(event) {
                 <p class="card-text"><b>General Labo</b><br>
                   
                   Av Magida Boulila Imm El Amen bloc C mezzanine - 3000 Sfax - Tunisia<br>
-                  Tel: (+216) 74 416 720 <br>
-                
+                  Tel: (+216) 74 416 720 - 22 130 703<br>
+                  Mobile: (+216) 22 130 703<br>
                   Fax: (+216) 74 416 730<br>
                   e-mail: general.labo@topnet.tn<br>
 
                   </p>
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13114.427757738546!2d10.7525109!3d34.7403008!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1301d3045f02bd19%3A0xd3610a94b005c1d0!2sGeneral%20Labo!5e0!3m2!1sfr!2stn!4v1699563523187!5m2!1sfr!2stn" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13114.427757738546!2d10.7525109!3d34.7403008!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1301d3045f02bd19%3A0xd3610a94b005c1d0!2sGeneral%20Labo!5e0!3m2!1sfr!2stn!4v1699563523187!5m2!1sfr!2stn" width="400" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
                   </div>
                   <div id="iabout" style=" display:none;max-width: 30rem;" class="card border-primary mb-3">
@@ -1211,11 +1221,71 @@ input.addEventListener("keypress", function(event) {
                                               </div>
                                               
                                               </div> 
+                                              <div id="iforceps" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+              
+              
+                                                <div  class="card-body">
+                                                  <h4 class="card-title">Forceps</h4>
+                                                  <p class="card-text">
+                                                    <a href="https://www.glasscolabs.com/product/forceps-curved-fine-points/" target="_blank">	Pince à dissection bout courbe pointu 125 mm	</a><br>
+                                                    <a href="https://www.glasscolabs.com/product/forceps-curved-fine-points/" target="_blank">	Pince à dissection bout courbe pointu 150 mm	</a><br>
+                                                    <a href="https://www.glasscolabs.com/product/forceps-straight-fine-points/" target="_blank">	Pince à dissection bout rond 125 mm	</a><br>
+                                                    <a href="https://www.glasscolabs.com/product/forceps-straight-fine-points/" target="_blank">	Pince à dissection pointe fine 150 mm	</a><br>
+                                                    <a href="https://www.glasscolabs.com/product/forceps-straight-fine-points/" target="_blank">	Pince à dissection pointe fine 200 mm	</a><br>
+                                                    <a href="https://www.glasscolabs.com/product/forceps-straight-blunt-points/" target="_blank">	Pince à dissection bout rond 150 mm	</a><br>
+                        <a href="https://www.glasscolabs.com/product/forceps-straight-blunt-points/" target="_blank">	Pince à dissection bout rond 250 mm	</a><br>
+                        <a href="https://www.glasscolabs.com/product/forceps-straight-blunt-points/" target="_blank">	Pince à dissection bout rond 300 mm	</a><br>
+                        <a href="https://www.glasscolabs.com/product/forceps-straight-blunt-points/" target="_blank">	pince à dissection pointe fine 125 mm	</a><br>
+                        <a href="https://www.glasscolabs.com/product/forceps-straight-blunt-points/" target="_blank">	Pince à dissection sans griffes 200 mm	</a><br>
+                        
+                                                    </p>
+                                                </div>
+                                                    </div>
+                                                    <div id="ispatula" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                      
+                                                      <div  class="card-body">
+                                                        <h4 class="card-title">Spatula</h4>
+                                                        <p class="card-text">
+                                                          <a href="https://www.glasscolabs.com/product/spatula-one-end-spoon-and-one-end-flat/" target="_blank">	Spatule double cuillère-plat 150mm	</a><br>
+                              <a href="https://www.glasscolabs.com/product/spatula-one-end-spoon-and-one-end-flat/" target="_blank">	Spatule double cuillère-plat  160 mm	</a><br>
+                              <a href="https://www.glasscolabs.com/product/spatula-double-one-end-tapered-one-end-flat-flexible-type/" target="_blank">	Spatule  double 260 mm	</a><br>
+                              <a href="https://www.glasscolabs.com/product/spatula-double-one-end-tapered-one-end-flat-flexible-type/" target="_blank">	Spatule double plat 155mm	</a><br>
+                              
+                              <a href="https://www.glasscolabs.com/product/spatula-knife/" target="_blank">	Spatule manche en bois long 150 mm	</a><br>
+                              <a href="https://www.glasscolabs.com/product/spatula-knife/" target="_blank">	Spatule manche en bois long 250 mm	</a><br>
+                              <a href="https://www.glasscolabs.com/product/spatula-knife/" target="_blank">	Spatule manche en bois long 300 mm	</a><br>
+                              
+                              
+                                                        </p>
+                                                      </div>
+                                                        </div>
+                                                    <div id="iclamps" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                            
+                                            
+                                                      <div  class="card-body">
+                                                        <h4 class="card-title">Clamp</h4>
+                                                        <p class="card-text">
+                                                          <a href="https://www.glasscolabs.com/product/clamp-retort-2-prong-euro-design/" target="_blank">	Pince à machoires avec noix	</a><br>
+                                                    <a href="https://www.glasscolabs.com/product/clamp-retort-3-prong-euro-design/" target="_blank">	Pince à machoires universelle sans noix	</a><br>
+                                                    <a href="https://www.glasscolabs.com/product/burette-clamp-mild-steel-black-powder-coated-fisher-type-with-boss-head-double/" target="_blank">	Pince pour burette double 	</a><br>
+                                                    <a href="https://www.glasscolabs.com/product/clamp-retort-3-prong-euro-design/" target="_blank">	Pince pour statif en acier inox 3 doigts	</a><br>
+                              
+                                                          </p>
+                                                      </div></div>
+                                                      <div id="iburner" style=" display:none;" class="card border-primary mb-3" style="max-width: 20rem;">
+                                                       
+                                                        <div  class="card-body">
+                                                          <h4 class="card-title">Bruner</h4>
+                                                          <p class="card-text">
+                                                            <a href="https://www.glasscolabs.com/product/burner-bunsen/" target="_blank">	Bec Benzen	</a><br>
+                                                            </p>
+                                                        </div>
+                                                          </div>
                                       
                 </div>
                 <footer class="small text-center text-muted" style="position: fixed;
-                bottom: 0;right: 10px;padding-bottom: 10px;">
-                  Developed by Jihen
+                bottom: 0;right: 40px;padding-bottom: 10px;">
+                   Copyright &copy; 2023 Developed by Jihen
               </footer>      
     </body>
     
