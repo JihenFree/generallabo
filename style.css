@@ -41,7 +41,7 @@ body {
     box-shadow: none;
     animation-name: animation1;
     animation-duration: 5s;
-    animation-iteration-count: 6;
+    animation-iteration-count: 20;
     animation-direction: alternate;
 }
 #ibak:hover{

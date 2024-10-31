@@ -5,6 +5,7 @@
 function popup(item){
   var thisitem = item.name;
     var y = document.querySelectorAll('[id^="i"]');
+    document.getElementById("newp").style.display = "none";
     for (i = 0; i < y.length; i++) {
   
         y[i].style.display = "none";
